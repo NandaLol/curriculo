@@ -19,17 +19,20 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
+    var scaffold = Scaffold(
+        appBar: AppBar(
         title: Text("Currículo"),
         centerTitle: true,
         backgroundColor: Colors.deepPurpleAccent,
       ),
       backgroundColor: Colors.white,
-      body:Column(
+      body:SingleChildScrollView(
+        child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children:<Widget> [
-          Icon(Icons.android, size: 120.0, color : Colors.deepPurpleAccent),
+          Container(
+            child: Image.asset('assets/foto.png')
+          ),
           Text("Maria Fernanda Alcântara Bento", style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 19.0)),
           Text("    Data de Nascimento: 01/05/2000", style: TextStyle(color: Colors.black, fontSize: 15.0)),
           Text("    Endereço: Rua Caetes n.º170", style: TextStyle(color: Colors.black, fontSize: 15.0)),
@@ -49,6 +52,8 @@ class _HomeState extends State<Home> {
 
         ],
       ),
+      ),
     );
+    return scaffold;
   }
 }
