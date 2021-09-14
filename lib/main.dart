@@ -31,7 +31,9 @@ class _HomeState extends State<Home> {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children:<Widget> [
           Container(
-            child: Image.asset('assets/foto.png',),
+            child:ClipOval(
+            child: Image.asset('assets/foto.png',)
+            ),
             height:300,
             color: Colors.deepPurpleAccent,
           ),Container(
