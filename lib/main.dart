@@ -50,7 +50,7 @@ class _HomeState extends State<Home> {
           Text(" Linguagens Aprendidas", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 25.0)),
           Text("     -HTML", style: TextStyle(color: Colors.white, fontSize: 15.0)),
           Text("     -CSS", style: TextStyle(color: Colors.white, fontSize: 15.0)),
-          Text("     -C++", style: TextStyle(color: Colors.white, fontSize: 15.0)),
+          Text("     -C", style: TextStyle(color: Colors.white, fontSize: 15.0)),
           Text("     -Python", style: TextStyle(color: Colors.white, fontSize: 15.0)),
           Text(" Soft Skills", style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 25.0)),
           Text("     -Foco", style: TextStyle(color: Colors.white, fontSize: 15.0)),
